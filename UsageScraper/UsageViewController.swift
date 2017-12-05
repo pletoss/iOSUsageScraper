@@ -32,24 +32,76 @@ class UsageViewController: UIViewController {
         self.updateUsage();
     }
 
-    func updateUsage() {
+    func tryScrapeUsage(callback: ((Bool) -> Void)? = nil) -> Void {
         let datausage_url="https://service.smartmobil.de/mytariff/invoice/showGprsDataUsage"
-        
-        let defaults = UserDefaults.standard
-        
-        login(user: defaults.string(forKey: "smartmobil_username") ?? "n/a",
-              password: defaults.string(forKey: "smartmobil_password") ?? "n/a",
-              callback: { (success) -> (Void) in
-            print(success)
-            if success {
-                Alamofire.request(datausage_url).responseString { response in
-                    print("\(response.result.isSuccess)")
-                    if let html = response.result.value {
-                        self.parseUsage(html: html)
-                    }
+        Alamofire.request(datausage_url).responseString { response in
+            if let html = response.result.value {
+                let success = self.parseUsage(html: html)
+                if (callback != nil) {
+                    callback?(success)
+                }
+            } else {
+                if (callback != nil) {
+                    callback?(false)
                 }
             }
-        })
+        }
+    }
+    
+    func hasCredentials() -> Bool {
+        let defaults = UserDefaults.standard
+
+        return defaults.string(forKey: "smartmobil_username") != nil &&
+                defaults.string(forKey: "smartmobil_password") != nil;
+    }
+
+    func credentialsChanged() -> Bool {
+        let defaults = UserDefaults.standard
+        return  (defaults.string(forKey: "last_login_user") != defaults.string(forKey: "smartmobil_username")) ||
+                (defaults.string(forKey: "last_login_pw") != defaults.string(forKey: "smartmobil_password"))
+    }
+
+    func showLoginFailedAlert() {
+        let alert = UIAlertController(title: "Login Failed", message: "Failure logging in", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func updateUsage() {
+        
+        if (!self.hasCredentials())
+        {
+            return;
+        }
+
+        let defaults = UserDefaults.standard
+
+        if (self.credentialsChanged()) {
+            self.login(user: defaults.string(forKey: "smartmobil_username")!,
+                       password: defaults.string(forKey: "smartmobil_password")!,
+                       callback: { success in
+                        if success {
+                            self.tryScrapeUsage()
+                        } else {
+                            self.showLoginFailedAlert()
+                        }
+            })
+        } else {
+            self.tryScrapeUsage(callback: { success in
+                if (!success) {
+                    self.login(user: defaults.string(forKey: "smartmobil_username")!,
+                          password: defaults.string(forKey: "smartmobil_password")!,
+                          callback: { success in
+                            if success {
+                                self.tryScrapeUsage()
+                            } else {
+                                self.showLoginFailedAlert()
+                            }
+                    })
+
+                }
+            })
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,7 +109,7 @@ class UsageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func login(user: String, password: String, callback: @escaping (Bool) -> (Void)) {
+    func login(user: String, password: String, callback: @escaping (Bool) -> Void) {
         let login_url = "https://service.smartmobil.de/"
         let submit_url = "https://service.smartmobil.de/public/login_check"
         
@@ -73,11 +125,37 @@ class UsageViewController: UIViewController {
                                    "UserLoginType[_token]" : token]
                 
                 Alamofire.request(submit_url, method: .post, parameters: parameters).responseString { response in
-                    print(response.response?.statusCode)
-                    callback(response.result.isSuccess)
+                    if let html = response.result.value {
+                        let success = self.parseLoginResult(html: html)
+                        if (success) {
+                            let defaults = UserDefaults.standard
+                            defaults.set(user, forKey: "last_login_user")
+                            defaults.set(password, forKey: "last_login_pw")
+                            defaults.synchronize()
+                        }
+                        callback(success)
+                    } else {
+                        callback(false)
+                    }
                 }
+            } else {
+                callback(false)
             }
         }
+    }
+    
+    func parseLoginResult(html: String) -> Bool {
+        //class="loginText error error2"
+        do{
+            let doc: Document = try SwiftSoup.parse(html)
+            let loginErrors:Elements? = try doc.getElementsByClass("loginText error error2")
+            return loginErrors?.size() == 0
+        }catch Exception.Error(let _, let message){
+            print(message)
+        }catch{
+            print("error")
+        }
+        return true;
     }
     
     func parseToken(html: String) -> String {
@@ -93,7 +171,7 @@ class UsageViewController: UIViewController {
         return "";
     }
 
-    func parseUsage(html: String) -> Void {
+    func parseUsage(html: String) -> Bool {
         do{
             let doc: Document = try SwiftSoup.parse(html)
             if let currentMonth = try doc.getElementById("currentMonth") {
@@ -123,11 +201,16 @@ class UsageViewController: UIViewController {
                 self.animateView(view: self.availLabel)
                 
                 print(String(usedKB) + "/" + String(availKB))
+                return true;
+            } else {
+                return false;
             }
         }catch Exception.Error(let _, let message){
             print(message)
+            return false;
         }catch{
             print("error")
+            return false;
         }
     }
     

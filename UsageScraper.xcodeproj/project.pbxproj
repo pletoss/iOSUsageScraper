@@ -10,6 +10,7 @@
 		466A5C668312811FF79AB1B8 /* Pods_UsageScraperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C675F9158A4227369A5DEA /* Pods_UsageScraperTests.framework */; };
 		9ED8ECD28B27DE44E0B80DC3 /* Pods_UsageScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F644536E81C045775DC974A /* Pods_UsageScraper.framework */; };
 		B05D2ACEE24B0C56DFA28313 /* Pods_UsageScraperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */; };
+		B271483487216F435ADB93AF /* Pods_SmartMobil_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D2115D6BE60125FAC84282 /* Pods_SmartMobil_Data.framework */; };
 		C48715FA1FD5F29400280217 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48715F91FD5F29400280217 /* Images.xcassets */; };
 		C48715FE1FD6005000280217 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48715FD1FD6005000280217 /* SettingsViewController.swift */; };
 		C48716001FD60C3A00280217 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */; };
@@ -77,12 +78,15 @@
 		0F644536E81C045775DC974A /* Pods_UsageScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE097AD5443B4B27344675C /* Pods-UsageScraperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraperUITests/Pods-UsageScraperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3098AADAB63DD79FD18B049B /* Pods-SmartMobil Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobil Data.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobil Data/Pods-SmartMobil Data.debug.xcconfig"; sourceTree = "<group>"; };
 		52623D886202AF99807D8015 /* Pods_UsageScraper_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		530FE5AC7031C9F294B8ABB5 /* Pods-UsageScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper.debug.xcconfig"; sourceTree = "<group>"; };
+		5A95361DCC70220A74A6B29E /* Pods-SmartMobil Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartMobil Data.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartMobil Data/Pods-SmartMobil Data.release.xcconfig"; sourceTree = "<group>"; };
 		5F85E7A0AD386D171C373FCB /* Pods-UsageScraperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraperTests/Pods-UsageScraperTests.release.xcconfig"; sourceTree = "<group>"; };
 		79C675F9158A4227369A5DEA /* Pods_UsageScraperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9658E4B08B973FF5A6A07556 /* Pods_UsageScraper_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22F9F461B3ACC4E0146CA20 /* Pods-UsageScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraper.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper.release.xcconfig"; sourceTree = "<group>"; };
+		A2D2115D6BE60125FAC84282 /* Pods_SmartMobil_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobil_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48715F91FD5F29400280217 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C48715FD1FD6005000280217 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48716071FD6976D00280217 /* NotificationCenter.framework in Frameworks */,
+				B271483487216F435ADB93AF /* Pods_SmartMobil_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +157,7 @@
 				79C675F9158A4227369A5DEA /* Pods_UsageScraperTests.framework */,
 				24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */,
 				C48716061FD6976D00280217 /* NotificationCenter.framework */,
+				A2D2115D6BE60125FAC84282 /* Pods_SmartMobil_Data.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 				5F85E7A0AD386D171C373FCB /* Pods-UsageScraperTests.release.xcconfig */,
 				1DE097AD5443B4B27344675C /* Pods-UsageScraperUITests.debug.xcconfig */,
 				E949AA056169F1D58A752EE3 /* Pods-UsageScraperUITests.release.xcconfig */,
+				3098AADAB63DD79FD18B049B /* Pods-SmartMobil Data.debug.xcconfig */,
+				5A95361DCC70220A74A6B29E /* Pods-SmartMobil Data.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -243,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C48716121FD6976D00280217 /* Build configuration list for PBXNativeTarget "SmartMobil Data" */;
 			buildPhases = (
+				B54CD20BB9044D9660471794 /* [CP] Check Pods Manifest.lock */,
 				C48716011FD6976D00280217 /* Sources */,
 				C48716021FD6976D00280217 /* Frameworks */,
 				C48716031FD6976D00280217 /* Resources */,
+				471DE12153ABDD76FC5C311A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,6 +448,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraperUITests/Pods-UsageScraperUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		471DE12153ABDD76FC5C311A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartMobil Data/Pods-SmartMobil Data-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		56EC039EBD0B8156B8FFC94C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +551,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54CD20BB9044D9660471794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E920B000FF0463C046DF1AA3 /* [CP] Embed Pods Frameworks */ = {
@@ -631,6 +671,7 @@
 /* Begin XCBuildConfiguration section */
 		C48716131FD6976D00280217 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3098AADAB63DD79FD18B049B /* Pods-SmartMobil Data.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
@@ -647,6 +688,7 @@
 		};
 		C48716141FD6976D00280217 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A95361DCC70220A74A6B29E /* Pods-SmartMobil Data.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
@@ -772,7 +814,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 530FE5AC7031C9F294B8ABB5 /* Pods-UsageScraper.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
@@ -790,7 +831,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A22F9F461B3ACC4E0146CA20 /* Pods-UsageScraper.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;

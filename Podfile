@@ -19,6 +19,13 @@ target 'UsageScraper' do
     inherit! :search_paths
     # Pods for testing
   end
+  
+  target 'SmartMobil Data' do
+    inherit! :search_paths
+    pod 'Alamofire', '~> 4.5'
+    pod "SwiftSoup"
+    pod 'UICircularProgressRing'
+  end
 
 end
 

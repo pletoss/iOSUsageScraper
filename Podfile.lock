@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.6.0)
+  - SwiftSoup (1.5.8)
+  - UICircularProgressRing (1.7.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - SwiftSoup
+  - UICircularProgressRing
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  SwiftSoup: 86a1f5ad07b7e3d14ab1a9324a58c75ae2215e79
+  UICircularProgressRing: 5aca63423d913dc967661370e94e2af0770dd9cd
+
+PODFILE CHECKSUM: 29bd46dc7e2839400de2a436b416fc1cf4fd9b34
+
+COCOAPODS: 1.1.1

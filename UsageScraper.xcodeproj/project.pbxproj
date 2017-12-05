@@ -7,25 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466A5C668312811FF79AB1B8 /* Pods_UsageScraperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C675F9158A4227369A5DEA /* Pods_UsageScraperTests.framework */; };
+		9ED8ECD28B27DE44E0B80DC3 /* Pods_UsageScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F644536E81C045775DC974A /* Pods_UsageScraper.framework */; };
+		B05D2ACEE24B0C56DFA28313 /* Pods_UsageScraperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */; };
+		C48715FA1FD5F29400280217 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48715F91FD5F29400280217 /* Images.xcassets */; };
+		C48715FE1FD6005000280217 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48715FD1FD6005000280217 /* SettingsViewController.swift */; };
+		C48716001FD60C3A00280217 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */; };
+		C48716071FD6976D00280217 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48716061FD6976D00280217 /* NotificationCenter.framework */; };
+		C487160A1FD6976D00280217 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48716091FD6976D00280217 /* TodayViewController.swift */; };
+		C487160D1FD6976D00280217 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C487160B1FD6976D00280217 /* MainInterface.storyboard */; };
+		C48716111FD6976D00280217 /* SmartMobil Data.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C48716051FD6976D00280217 /* SmartMobil Data.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C49063841FD5504800E472CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063831FD5504800E472CD /* AppDelegate.swift */; };
-		C49063861FD5504800E472CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063851FD5504800E472CD /* ViewController.swift */; };
+		C49063861FD5504800E472CD /* UsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063851FD5504800E472CD /* UsageViewController.swift */; };
 		C49063891FD5504800E472CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49063871FD5504800E472CD /* Main.storyboard */; };
-		C490638B1FD5504800E472CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C490638A1FD5504800E472CD /* Assets.xcassets */; };
 		C490638E1FD5504800E472CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C490638C1FD5504800E472CD /* LaunchScreen.storyboard */; };
 		C49063991FD5504800E472CD /* UsageScraperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063981FD5504800E472CD /* UsageScraperTests.swift */; };
 		C49063A41FD5504800E472CD /* UsageScraperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063A31FD5504800E472CD /* UsageScraperUITests.swift */; };
-		C49063A91FD5504800E472CD /* UsageScraper WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C49063A81FD5504800E472CD /* UsageScraper WatchKit App.app */; };
-		C49063AF1FD5504800E472CD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49063AD1FD5504800E472CD /* Interface.storyboard */; };
-		C49063B11FD5504800E472CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49063B01FD5504800E472CD /* Assets.xcassets */; };
-		C49063B81FD5504800E472CD /* UsageScraper WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C49063B71FD5504800E472CD /* UsageScraper WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C49063BD1FD5504800E472CD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063BC1FD5504800E472CD /* InterfaceController.swift */; };
-		C49063BF1FD5504800E472CD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063BE1FD5504800E472CD /* ExtensionDelegate.swift */; };
-		C49063C11FD5504800E472CD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063C01FD5504800E472CD /* NotificationController.swift */; };
-		C49063C31FD5504800E472CD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49063C21FD5504800E472CD /* ComplicationController.swift */; };
-		C49063C51FD5504800E472CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49063C41FD5504800E472CD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C487160F1FD6976D00280217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C49063781FD5504800E472CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C48716041FD6976D00280217;
+			remoteInfo = "SmartMobil Data";
+		};
 		C49063951FD5504800E472CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C49063781FD5504800E472CD /* Project object */;
@@ -40,30 +47,16 @@
 			remoteGlobalIDString = C490637F1FD5504800E472CD;
 			remoteInfo = UsageScraper;
 		};
-		C49063AA1FD5504800E472CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C49063781FD5504800E472CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C49063A71FD5504800E472CD;
-			remoteInfo = "UsageScraper WatchKit App";
-		};
-		C49063B91FD5504800E472CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C49063781FD5504800E472CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C49063B61FD5504800E472CD;
-			remoteInfo = "UsageScraper WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C49063CD1FD5504800E472CD /* Embed App Extensions */ = {
+		C48716151FD6976D00280217 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C49063B81FD5504800E472CD /* UsageScraper WatchKit Extension.appex in Embed App Extensions */,
+				C48716111FD6976D00280217 /* SmartMobil Data.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +67,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				C49063A91FD5504800E472CD /* UsageScraper WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,11 +74,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F644536E81C045775DC974A /* Pods_UsageScraper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE097AD5443B4B27344675C /* Pods-UsageScraperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraperUITests/Pods-UsageScraperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52623D886202AF99807D8015 /* Pods_UsageScraper_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530FE5AC7031C9F294B8ABB5 /* Pods-UsageScraper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper.debug.xcconfig"; sourceTree = "<group>"; };
+		5F85E7A0AD386D171C373FCB /* Pods-UsageScraperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraperTests/Pods-UsageScraperTests.release.xcconfig"; sourceTree = "<group>"; };
+		79C675F9158A4227369A5DEA /* Pods_UsageScraperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9658E4B08B973FF5A6A07556 /* Pods_UsageScraper_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22F9F461B3ACC4E0146CA20 /* Pods-UsageScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraper.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper.release.xcconfig"; sourceTree = "<group>"; };
+		C48715F91FD5F29400280217 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C48715FD1FD6005000280217 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		C48716051FD6976D00280217 /* SmartMobil Data.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmartMobil Data.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48716061FD6976D00280217 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C48716091FD6976D00280217 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C487160C1FD6976D00280217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C487160E1FD6976D00280217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49063801FD5504800E472CD /* UsageScraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsageScraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49063831FD5504800E472CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C49063851FD5504800E472CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C49063851FD5504800E472CD /* UsageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageViewController.swift; sourceTree = "<group>"; };
 		C49063881FD5504800E472CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C490638A1FD5504800E472CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C490638D1FD5504800E472CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C490638F1FD5504800E472CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49063941FD5504800E472CD /* UsageScraperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsageScraperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,25 +103,24 @@
 		C490639F1FD5504800E472CD /* UsageScraperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsageScraperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49063A31FD5504800E472CD /* UsageScraperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageScraperUITests.swift; sourceTree = "<group>"; };
 		C49063A51FD5504800E472CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C49063A81FD5504800E472CD /* UsageScraper WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UsageScraper WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C49063AE1FD5504800E472CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		C49063B01FD5504800E472CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C49063B21FD5504800E472CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C49063B71FD5504800E472CD /* UsageScraper WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UsageScraper WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C49063BC1FD5504800E472CD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		C49063BE1FD5504800E472CD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		C49063C01FD5504800E472CD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		C49063C21FD5504800E472CD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		C49063C41FD5504800E472CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C49063C61FD5504800E472CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C49063C71FD5504800E472CD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E949AA056169F1D58A752EE3 /* Pods-UsageScraperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraperUITests/Pods-UsageScraperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9CFC2D363430311177D221F /* Pods-UsageScraperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraperTests/Pods-UsageScraperTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C48716021FD6976D00280217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C48716071FD6976D00280217 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C490637D1FD5504800E472CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED8ECD28B27DE44E0B80DC3 /* Pods_UsageScraper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466A5C668312811FF79AB1B8 /* Pods_UsageScraperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,28 +136,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C49063B41FD5504800E472CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B05D2ACEE24B0C56DFA28313 /* Pods_UsageScraperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E89DAFF3417701AA662BD0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F644536E81C045775DC974A /* Pods_UsageScraper.framework */,
+				9658E4B08B973FF5A6A07556 /* Pods_UsageScraper_WatchKit_App.framework */,
+				52623D886202AF99807D8015 /* Pods_UsageScraper_WatchKit_Extension.framework */,
+				79C675F9158A4227369A5DEA /* Pods_UsageScraperTests.framework */,
+				24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */,
+				C48716061FD6976D00280217 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E2CC839BADB67459CA8DFCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				530FE5AC7031C9F294B8ABB5 /* Pods-UsageScraper.debug.xcconfig */,
+				A22F9F461B3ACC4E0146CA20 /* Pods-UsageScraper.release.xcconfig */,
+				F9CFC2D363430311177D221F /* Pods-UsageScraperTests.debug.xcconfig */,
+				5F85E7A0AD386D171C373FCB /* Pods-UsageScraperTests.release.xcconfig */,
+				1DE097AD5443B4B27344675C /* Pods-UsageScraperUITests.debug.xcconfig */,
+				E949AA056169F1D58A752EE3 /* Pods-UsageScraperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C48716081FD6976D00280217 /* SmartMobil Data */ = {
+			isa = PBXGroup;
+			children = (
+				C48716091FD6976D00280217 /* TodayViewController.swift */,
+				C487160B1FD6976D00280217 /* MainInterface.storyboard */,
+				C487160E1FD6976D00280217 /* Info.plist */,
+			);
+			path = "SmartMobil Data";
+			sourceTree = "<group>";
+		};
 		C49063771FD5504800E472CD = {
 			isa = PBXGroup;
 			children = (
 				C49063821FD5504800E472CD /* UsageScraper */,
 				C49063971FD5504800E472CD /* UsageScraperTests */,
 				C49063A21FD5504800E472CD /* UsageScraperUITests */,
-				C49063AC1FD5504800E472CD /* UsageScraper WatchKit App */,
-				C49063BB1FD5504800E472CD /* UsageScraper WatchKit Extension */,
+				C48716081FD6976D00280217 /* SmartMobil Data */,
 				C49063811FD5504800E472CD /* Products */,
+				3E2CC839BADB67459CA8DFCD /* Pods */,
+				1E89DAFF3417701AA662BD0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,8 +198,7 @@
 				C49063801FD5504800E472CD /* UsageScraper.app */,
 				C49063941FD5504800E472CD /* UsageScraperTests.xctest */,
 				C490639F1FD5504800E472CD /* UsageScraperUITests.xctest */,
-				C49063A81FD5504800E472CD /* UsageScraper WatchKit App.app */,
-				C49063B71FD5504800E472CD /* UsageScraper WatchKit Extension.appex */,
+				C48716051FD6976D00280217 /* SmartMobil Data.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,11 +207,13 @@
 			isa = PBXGroup;
 			children = (
 				C49063831FD5504800E472CD /* AppDelegate.swift */,
-				C49063851FD5504800E472CD /* ViewController.swift */,
+				C48715FD1FD6005000280217 /* SettingsViewController.swift */,
+				C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */,
+				C49063851FD5504800E472CD /* UsageViewController.swift */,
 				C49063871FD5504800E472CD /* Main.storyboard */,
-				C490638A1FD5504800E472CD /* Assets.xcassets */,
 				C490638C1FD5504800E472CD /* LaunchScreen.storyboard */,
 				C490638F1FD5504800E472CD /* Info.plist */,
+				C48715F91FD5F29400280217 /* Images.xcassets */,
 			);
 			path = UsageScraper;
 			sourceTree = "<group>";
@@ -196,46 +236,43 @@
 			path = UsageScraperUITests;
 			sourceTree = "<group>";
 		};
-		C49063AC1FD5504800E472CD /* UsageScraper WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				C49063AD1FD5504800E472CD /* Interface.storyboard */,
-				C49063B01FD5504800E472CD /* Assets.xcassets */,
-				C49063B21FD5504800E472CD /* Info.plist */,
-			);
-			path = "UsageScraper WatchKit App";
-			sourceTree = "<group>";
-		};
-		C49063BB1FD5504800E472CD /* UsageScraper WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				C49063BC1FD5504800E472CD /* InterfaceController.swift */,
-				C49063BE1FD5504800E472CD /* ExtensionDelegate.swift */,
-				C49063C01FD5504800E472CD /* NotificationController.swift */,
-				C49063C21FD5504800E472CD /* ComplicationController.swift */,
-				C49063C41FD5504800E472CD /* Assets.xcassets */,
-				C49063C61FD5504800E472CD /* Info.plist */,
-				C49063C71FD5504800E472CD /* PushNotificationPayload.apns */,
-			);
-			path = "UsageScraper WatchKit Extension";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C490637F1FD5504800E472CD /* UsageScraper */ = {
+		C48716041FD6976D00280217 /* SmartMobil Data */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C49063D21FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraper" */;
+			buildConfigurationList = C48716121FD6976D00280217 /* Build configuration list for PBXNativeTarget "SmartMobil Data" */;
 			buildPhases = (
-				C490637C1FD5504800E472CD /* Sources */,
-				C490637D1FD5504800E472CD /* Frameworks */,
-				C490637E1FD5504800E472CD /* Resources */,
-				C49063D11FD5504800E472CD /* Embed Watch Content */,
+				C48716011FD6976D00280217 /* Sources */,
+				C48716021FD6976D00280217 /* Frameworks */,
+				C48716031FD6976D00280217 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C49063AB1FD5504800E472CD /* PBXTargetDependency */,
+			);
+			name = "SmartMobil Data";
+			productName = "SmartMobil Data";
+			productReference = C48716051FD6976D00280217 /* SmartMobil Data.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C490637F1FD5504800E472CD /* UsageScraper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C49063D21FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraper" */;
+			buildPhases = (
+				8006DCF5F1E8EFB10A30D6F9 /* [CP] Check Pods Manifest.lock */,
+				C490637C1FD5504800E472CD /* Sources */,
+				C490637D1FD5504800E472CD /* Frameworks */,
+				C490637E1FD5504800E472CD /* Resources */,
+				C49063D11FD5504800E472CD /* Embed Watch Content */,
+				A932211E1EE38E1B4B9CDFBF /* [CP] Embed Pods Frameworks */,
+				56EC039EBD0B8156B8FFC94C /* [CP] Copy Pods Resources */,
+				C48716151FD6976D00280217 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C48716101FD6976D00280217 /* PBXTargetDependency */,
 			);
 			name = UsageScraper;
 			productName = UsageScraper;
@@ -246,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C49063D51FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraperTests" */;
 			buildPhases = (
+				0BCE6F24B6E46D995BD707AE /* [CP] Check Pods Manifest.lock */,
 				C49063901FD5504800E472CD /* Sources */,
 				C49063911FD5504800E472CD /* Frameworks */,
 				C49063921FD5504800E472CD /* Resources */,
+				A8C312DE047F5A76707AECCF /* [CP] Embed Pods Frameworks */,
+				8A0133148C8ACC0D63541E35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C49063D81FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraperUITests" */;
 			buildPhases = (
+				6951E7754CC923766BF07DB6 /* [CP] Check Pods Manifest.lock */,
 				C490639B1FD5504800E472CD /* Sources */,
 				C490639C1FD5504800E472CD /* Frameworks */,
 				C490639D1FD5504800E472CD /* Resources */,
+				E920B000FF0463C046DF1AA3 /* [CP] Embed Pods Frameworks */,
+				22725DF79AEB763229CE5E66 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,50 +321,20 @@
 			productReference = C490639F1FD5504800E472CD /* UsageScraperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		C49063A71FD5504800E472CD /* UsageScraper WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C49063CE1FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraper WatchKit App" */;
-			buildPhases = (
-				C49063A61FD5504800E472CD /* Resources */,
-				C49063CD1FD5504800E472CD /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C49063BA1FD5504800E472CD /* PBXTargetDependency */,
-			);
-			name = "UsageScraper WatchKit App";
-			productName = "UsageScraper WatchKit App";
-			productReference = C49063A81FD5504800E472CD /* UsageScraper WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		C49063B61FD5504800E472CD /* UsageScraper WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C49063CA1FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraper WatchKit Extension" */;
-			buildPhases = (
-				C49063B31FD5504800E472CD /* Sources */,
-				C49063B41FD5504800E472CD /* Frameworks */,
-				C49063B51FD5504800E472CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "UsageScraper WatchKit Extension";
-			productName = "UsageScraper WatchKit Extension";
-			productReference = C49063B71FD5504800E472CD /* UsageScraper WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C49063781FD5504800E472CD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Raul Gigea";
 				TargetAttributes = {
+					C48716041FD6976D00280217 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					C490637F1FD5504800E472CD = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -335,14 +348,6 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C490637F1FD5504800E472CD;
-					};
-					C49063A71FD5504800E472CD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					C49063B61FD5504800E472CD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -362,19 +367,26 @@
 				C490637F1FD5504800E472CD /* UsageScraper */,
 				C49063931FD5504800E472CD /* UsageScraperTests */,
 				C490639E1FD5504800E472CD /* UsageScraperUITests */,
-				C49063A71FD5504800E472CD /* UsageScraper WatchKit App */,
-				C49063B61FD5504800E472CD /* UsageScraper WatchKit Extension */,
+				C48716041FD6976D00280217 /* SmartMobil Data */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C48716031FD6976D00280217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C487160D1FD6976D00280217 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C490637E1FD5504800E472CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48715FA1FD5F29400280217 /* Images.xcassets in Resources */,
 				C490638E1FD5504800E472CD /* LaunchScreen.storyboard in Resources */,
-				C490638B1FD5504800E472CD /* Assets.xcassets in Resources */,
 				C49063891FD5504800E472CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,32 +405,163 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C49063A61FD5504800E472CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C49063B11FD5504800E472CD /* Assets.xcassets in Resources */,
-				C49063AF1FD5504800E472CD /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C49063B51FD5504800E472CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C49063C51FD5504800E472CD /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BCE6F24B6E46D995BD707AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		22725DF79AEB763229CE5E66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraperUITests/Pods-UsageScraperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56EC039EBD0B8156B8FFC94C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6951E7754CC923766BF07DB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8006DCF5F1E8EFB10A30D6F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A0133148C8ACC0D63541E35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraperTests/Pods-UsageScraperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C312DE047F5A76707AECCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraperTests/Pods-UsageScraperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A932211E1EE38E1B4B9CDFBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E920B000FF0463C046DF1AA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UsageScraperUITests/Pods-UsageScraperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C48716011FD6976D00280217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C487160A1FD6976D00280217 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C490637C1FD5504800E472CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49063861FD5504800E472CD /* ViewController.swift in Sources */,
+				C48716001FD60C3A00280217 /* SettingsTableViewController.swift in Sources */,
+				C49063861FD5504800E472CD /* UsageViewController.swift in Sources */,
 				C49063841FD5504800E472CD /* AppDelegate.swift in Sources */,
+				C48715FE1FD6005000280217 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,20 +581,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C49063B31FD5504800E472CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C49063C11FD5504800E472CD /* NotificationController.swift in Sources */,
-				C49063C31FD5504800E472CD /* ComplicationController.swift in Sources */,
-				C49063BF1FD5504800E472CD /* ExtensionDelegate.swift in Sources */,
-				C49063BD1FD5504800E472CD /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C48716101FD6976D00280217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C48716041FD6976D00280217 /* SmartMobil Data */;
+			targetProxy = C487160F1FD6976D00280217 /* PBXContainerItemProxy */;
+		};
 		C49063961FD5504800E472CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C490637F1FD5504800E472CD /* UsageScraper */;
@@ -462,19 +599,17 @@
 			target = C490637F1FD5504800E472CD /* UsageScraper */;
 			targetProxy = C49063A01FD5504800E472CD /* PBXContainerItemProxy */;
 		};
-		C49063AB1FD5504800E472CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C49063A71FD5504800E472CD /* UsageScraper WatchKit App */;
-			targetProxy = C49063AA1FD5504800E472CD /* PBXContainerItemProxy */;
-		};
-		C49063BA1FD5504800E472CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C49063B61FD5504800E472CD /* UsageScraper WatchKit Extension */;
-			targetProxy = C49063B91FD5504800E472CD /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C487160B1FD6976D00280217 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C487160C1FD6976D00280217 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C49063871FD5504800E472CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -491,17 +626,41 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		C49063AD1FD5504800E472CD /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C49063AE1FD5504800E472CD /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C48716131FD6976D00280217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW66QRQ745;
+				INFOPLIST_FILE = "SmartMobil Data/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.foo.UsageScraper.SmartMobil-Data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C48716141FD6976D00280217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW66QRQ745;
+				INFOPLIST_FILE = "SmartMobil Data/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.foo.UsageScraper.SmartMobil-Data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C49063C81FD5504800E472CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -609,89 +768,18 @@
 			};
 			name = Release;
 		};
-		C49063CB1FD5504800E472CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
-				INFOPLIST_FILE = "UsageScraper WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sprintcode.UsageScraper.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.1;
-			};
-			name = Debug;
-		};
-		C49063CC1FD5504800E472CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
-				INFOPLIST_FILE = "UsageScraper WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sprintcode.UsageScraper.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.1;
-			};
-			name = Release;
-		};
-		C49063CF1FD5504800E472CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
-				IBSC_MODULE = UsageScraper_WatchKit_Extension;
-				INFOPLIST_FILE = "UsageScraper WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sprintcode.UsageScraper.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.1;
-			};
-			name = Debug;
-		};
-		C49063D01FD5504800E472CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
-				IBSC_MODULE = UsageScraper_WatchKit_Extension;
-				INFOPLIST_FILE = "UsageScraper WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sprintcode.UsageScraper.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.1;
-			};
-			name = Release;
-		};
 		C49063D31FD5504800E472CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530FE5AC7031C9F294B8ABB5 /* Pods-UsageScraper.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
 				INFOPLIST_FILE = UsageScraper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sprintcode.UsageScraper;
+				PRODUCT_BUNDLE_IDENTIFIER = net.foo.UsageScraper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -700,13 +788,16 @@
 		};
 		C49063D41FD5504800E472CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22F9F461B3ACC4E0146CA20 /* Pods-UsageScraper.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
 				INFOPLIST_FILE = UsageScraper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.sprintcode.UsageScraper;
+				PRODUCT_BUNDLE_IDENTIFIER = net.foo.UsageScraper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,8 +806,9 @@
 		};
 		C49063D61FD5504800E472CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9CFC2D363430311177D221F /* Pods-UsageScraperTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
@@ -732,8 +824,9 @@
 		};
 		C49063D71FD5504800E472CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F85E7A0AD386D171C373FCB /* Pods-UsageScraperTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
@@ -749,8 +842,9 @@
 		};
 		C49063D91FD5504800E472CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE097AD5443B4B27344675C /* Pods-UsageScraperUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
 				INFOPLIST_FILE = UsageScraperUITests/Info.plist;
@@ -765,8 +859,9 @@
 		};
 		C49063DA1FD5504800E472CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E949AA056169F1D58A752EE3 /* Pods-UsageScraperUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW66QRQ745;
 				INFOPLIST_FILE = UsageScraperUITests/Info.plist;
@@ -782,29 +877,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C48716121FD6976D00280217 /* Build configuration list for PBXNativeTarget "SmartMobil Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48716131FD6976D00280217 /* Debug */,
+				C48716141FD6976D00280217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C490637B1FD5504800E472CD /* Build configuration list for PBXProject "UsageScraper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C49063C81FD5504800E472CD /* Debug */,
 				C49063C91FD5504800E472CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C49063CA1FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraper WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C49063CB1FD5504800E472CD /* Debug */,
-				C49063CC1FD5504800E472CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C49063CE1FD5504800E472CD /* Build configuration list for PBXNativeTarget "UsageScraper WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C49063CF1FD5504800E472CD /* Debug */,
-				C49063D01FD5504800E472CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

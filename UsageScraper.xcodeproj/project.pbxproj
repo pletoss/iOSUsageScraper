@@ -11,6 +11,8 @@
 		9ED8ECD28B27DE44E0B80DC3 /* Pods_UsageScraper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F644536E81C045775DC974A /* Pods_UsageScraper.framework */; };
 		B05D2ACEE24B0C56DFA28313 /* Pods_UsageScraperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24210F2CE3FE6BD63BFDB30F /* Pods_UsageScraperUITests.framework */; };
 		B271483487216F435ADB93AF /* Pods_SmartMobil_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D2115D6BE60125FAC84282 /* Pods_SmartMobil_Data.framework */; };
+		C41DD81C1FD7EF4B003882EA /* UsageScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DD81B1FD7EF4B003882EA /* UsageScraper.swift */; };
+		C41DD81D1FD7F594003882EA /* UsageScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DD81B1FD7EF4B003882EA /* UsageScraper.swift */; };
 		C48715FA1FD5F29400280217 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48715F91FD5F29400280217 /* Images.xcassets */; };
 		C48715FE1FD6005000280217 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48715FD1FD6005000280217 /* SettingsViewController.swift */; };
 		C48716001FD60C3A00280217 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */; };
@@ -87,6 +89,9 @@
 		9658E4B08B973FF5A6A07556 /* Pods_UsageScraper_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsageScraper_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22F9F461B3ACC4E0146CA20 /* Pods-UsageScraper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsageScraper.release.xcconfig"; path = "Pods/Target Support Files/Pods-UsageScraper/Pods-UsageScraper.release.xcconfig"; sourceTree = "<group>"; };
 		A2D2115D6BE60125FAC84282 /* Pods_SmartMobil_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartMobil_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C41DD8191FD7EAF1003882EA /* UsageScraper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UsageScraper.entitlements; sourceTree = "<group>"; };
+		C41DD81A1FD7EB24003882EA /* SmartMobil Data.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SmartMobil Data.entitlements"; sourceTree = "<group>"; };
+		C41DD81B1FD7EF4B003882EA /* UsageScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageScraper.swift; sourceTree = "<group>"; };
 		C48715F91FD5F29400280217 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C48715FD1FD6005000280217 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +185,7 @@
 		C48716081FD6976D00280217 /* SmartMobil Data */ = {
 			isa = PBXGroup;
 			children = (
+				C41DD81A1FD7EB24003882EA /* SmartMobil Data.entitlements */,
 				C48716091FD6976D00280217 /* TodayViewController.swift */,
 				C487160B1FD6976D00280217 /* MainInterface.storyboard */,
 				C487160E1FD6976D00280217 /* Info.plist */,
@@ -214,10 +220,12 @@
 		C49063821FD5504800E472CD /* UsageScraper */ = {
 			isa = PBXGroup;
 			children = (
+				C41DD8191FD7EAF1003882EA /* UsageScraper.entitlements */,
 				C49063831FD5504800E472CD /* AppDelegate.swift */,
 				C48715FD1FD6005000280217 /* SettingsViewController.swift */,
 				C48715FF1FD60C3A00280217 /* SettingsTableViewController.swift */,
 				C49063851FD5504800E472CD /* UsageViewController.swift */,
+				C41DD81B1FD7EF4B003882EA /* UsageScraper.swift */,
 				C49063871FD5504800E472CD /* Main.storyboard */,
 				C490638C1FD5504800E472CD /* LaunchScreen.storyboard */,
 				C490638F1FD5504800E472CD /* Info.plist */,
@@ -343,11 +351,21 @@
 				TargetAttributes = {
 					C48716041FD6976D00280217 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C490637F1FD5504800E472CD = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C49063931FD5504800E472CD = {
 						CreatedOnToolsVersion = 9.1;
@@ -590,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41DD81D1FD7F594003882EA /* UsageScraper.swift in Sources */,
 				C487160A1FD6976D00280217 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41DD81C1FD7EF4B003882EA /* UsageScraper.swift in Sources */,
 				C48716001FD60C3A00280217 /* SettingsTableViewController.swift in Sources */,
 				C49063861FD5504800E472CD /* UsageViewController.swift in Sources */,
 				C49063841FD5504800E472CD /* AppDelegate.swift in Sources */,
@@ -673,13 +693,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3098AADAB63DD79FD18B049B /* Pods-SmartMobil Data.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
+				CODE_SIGN_ENTITLEMENTS = "SmartMobil Data/SmartMobil Data.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9QZ5ZQ2KAC;
 				INFOPLIST_FILE = "SmartMobil Data/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.foo.UsageScraper.SmartMobil-Data";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sprintcode.usagescraper.todaywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b846a441-88b2-4a58-8978-607552601b4e";
+				PROVISIONING_PROFILE_SPECIFIER = "UsageScraper Today Dev";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -690,13 +714,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A95361DCC70220A74A6B29E /* Pods-SmartMobil Data.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
+				CODE_SIGN_ENTITLEMENTS = "SmartMobil Data/SmartMobil Data.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9QZ5ZQ2KAC;
 				INFOPLIST_FILE = "SmartMobil Data/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.foo.UsageScraper.SmartMobil-Data";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sprintcode.usagescraper.todaywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "056bcc3d-d8e3-4f85-be6e-efeb5070551b";
+				PROVISIONING_PROFILE_SPECIFIER = "UsageScraper Today Dev";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -816,12 +843,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
+				CODE_SIGN_ENTITLEMENTS = UsageScraper/UsageScraper.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9QZ5ZQ2KAC;
 				INFOPLIST_FILE = UsageScraper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.foo.UsageScraper;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sprintcode.usagescraper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6a2d5e9e-55a2-4f9d-8065-c8d385422ac7";
+				PROVISIONING_PROFILE_SPECIFIER = "UsageScraper Dev";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -833,12 +863,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QW66QRQ745;
+				CODE_SIGN_ENTITLEMENTS = UsageScraper/UsageScraper.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9QZ5ZQ2KAC;
 				INFOPLIST_FILE = UsageScraper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.foo.UsageScraper;
+				PRODUCT_BUNDLE_IDENTIFIER = de.sprintcode.usagescraper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a9ae554b-db9d-497e-89eb-52272eb60d09";
+				PROVISIONING_PROFILE_SPECIFIER = "UsageScraper Dev";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
